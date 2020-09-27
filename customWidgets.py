@@ -63,19 +63,19 @@ class LoginPage(Frame):
 		#change title
 		self.master.title('Login System - (Elsker Elvish)')
 		#icons used
-		self.bg=PhotoImage(file='media/g898.png')
-		self.intr=PhotoImage(file='media/internet.png')
-		self.wa=PhotoImage(file='media/whatsapp.png')
-		self.fb=PhotoImage(file='media/facebook.png')
+		self.bg=PhotoImage(file='g898.png')
+		self.intr=PhotoImage(file='internet.png')
+		self.wa=PhotoImage(file='whatsapp.png')
+		self.fb=PhotoImage(file='facebook.png')
 
 		#main background image
 		Label(self,image=self.bg).pack()
 
 		#take id input and password
-		self._id  = LabeledEntry(self,'Your first name here.','','media/users.png',**{'bg':'#2bc87c'})
+		self._id  = LabeledEntry(self,'Your first name here.','','users.png',**{'bg':'#2bc87c'})
 		self._id.place(x=40,y=300)
 
-		self.psw  = LabeledEntry(self,'Password','','media/users.png',**{'bg':'#2bc87c'})
+		self.psw  = LabeledEntry(self,'Password','','users.png',**{'bg':'#2bc87c'})
 		self.psw.entry['show']='*' # hiide typing charcters
 		self.psw.place(x=40,y=390)
 		#show password
@@ -115,33 +115,33 @@ class RegisterPage(Frame):
 		#change title
 		self.master.title('Register - (Elsker Elvish)')
 		#icons used
-		self.bg=PhotoImage(file='media/g898.png')
-		self.intr=PhotoImage(file='media/internet.png')
-		self.wa=PhotoImage(file='media/whatsapp.png')
-		self.fb=PhotoImage(file='media/facebook.png')
+		self.bg=PhotoImage(file='g898.png')
+		self.intr=PhotoImage(file='internet.png')
+		self.wa=PhotoImage(file='whatsapp.png')
+		self.fb=PhotoImage(file='facebook.png')
 
 		#main background image
 		Label(self,image=self.bg).pack()
 
 		#take id input and password
 		default={'bg':'#2bc87c'}
-		self.fname  = LabeledEntry(self,'First name','','media/users.png',**default)
+		self.fname  = LabeledEntry(self,'First name','','users.png',**default)
 		#lower the width of entry
 		self.fname.entry['width']=15
 		self.fname.place(x=40,y=300)
 
-		self.lanme  = LabeledEntry(self,'Last name','','media/users.png',**default)
+		self.lanme  = LabeledEntry(self,'Last name','','users.png',**default)
 		#lower the width of entry
 		self.lanme.entry['width']=15
 		self.lanme.place(x=220,y=300)
 
 
-		self.psw  = LabeledEntry(self,'Password','','media/users.png',**default)
+		self.psw  = LabeledEntry(self,'Password','','users.png',**default)
 		#lower the width of entry
 		self.psw.entry.config(width=15,show='*')
 		self.psw.place(x=40,y=390)
 
-		self.retype_psw  = LabeledEntry(self,'Retype password','','media/users.png',**default)
+		self.retype_psw  = LabeledEntry(self,'Retype password','','users.png',**default)
 		#lower the width of entry
 		self.retype_psw.entry.config(width=15,show='*')
 		self.retype_psw.place(x=220,y=390)
